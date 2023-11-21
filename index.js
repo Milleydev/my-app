@@ -15,6 +15,7 @@ function search(event) {
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(displayTemperature);
+  searchCity("Nairobi");
 }
 
 function formatDate(date) {
